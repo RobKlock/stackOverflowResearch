@@ -1,1 +1,2 @@
-# stackOverflowResearch
+# StackOverflow Research
+This is my personal repo for my Honors project at Oberlin. My team and I are building a StackoverFlow bot that uses machine learning to automatically detect and warn SO users of SQL-Injectrion vulnerabilities in their code. Once the bot is running, it will parse SO pages tagged with SQL or PHP and appropriately warn them. Unlike the majority of behavior we've seen on SO, the bot will also provide links to readings for users to educate themselves on SQL-Injection.
