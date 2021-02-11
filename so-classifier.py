@@ -6,9 +6,7 @@ Created on Thu Oct 22 13:15:04 2020
 @author: robertklock
 """
 
-import nltk
 import matplotlib.pyplot as plt
-import numpy as np
 from csv import reader
 from nltk.corpus import treebank
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -19,19 +17,16 @@ from sklearn.model_selection import cross_val_score
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import cross_val_predict
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import plot_confusion_matrix
 from sklearn.feature_selection import chi2
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import LinearSVC
-import tensorflow as tf
-from tensorflow import keras
-
-import string
 import re
 pd.set_option('mode.chained_assignment', None)
 
-#load data fxn
+# Takes in a csv and returns a list
 def load_data(filename):
     dataset = list()
     with open(filename, 'r') as file:
@@ -42,34 +37,33 @@ def load_data(filename):
             dataset.append(row)
     return dataset
 
-#load data in plain array or as a pandas dataframe
-so_csv_data = load_data("training_set.csv")
-so_df = pd.read_csv('training_set.csv', index_col = 0)
+'''=== Load Data === '''
+# Load training and testing data as CSVs
+train_csv = load_data("training_set.csv")
+test_csv = load_data("testing_set.csv")
 
-test_set = load_data("testing_set.csv")
+# Load training and testing data as Pandas Dataframes
+train_df = pd.read_csv('training_set.csv', index_col = 0)
+test_df = pd.read_csv('testing_set.csv', index_col = 0)
 
-# === Clean Data ====
 
-#so_dataframe_cleaned = so_dataframe.drop(axis = 1, columns = 0)
+''' === Clean Data / Preprocessing ==== '''
+# Remove NA rows
+train_df = train_df[train_df.id.notna()]
+# Lowercase all content
+train_df["content"] = train_df["content"].str.lower()
 
-#remove NA rows
-so_df_c = so_df[so_df.id.notna()]
-#lowercase all content
-#was previously so_df["content"] = so_df["content"].str.lower(), but that throws a warning
-#so_dataframe_cleaned.loc[:,'content'] = so_dataframe_cleaned[:,'content'].str.lower()
-#nvm
-so_df_c["content"] = so_df_c["content"].str.lower()
+''' Some design considerations-is bag of words or straight up tokenization more useful?
+ the first preserves ordering of words, the second doesnt '''
 
-#some design considerations-is bag of words or straight up tokenization more useful?
-#the first preserves ordering of words, the second doesnt
-
-#remove punctuation in content
-
-#optional - remove punc?
+# Remove punctuation in content
 regex = re.compile('[%s]' % re.escape('!"#%&\'()*+,-./:;<=>?@[\\]^`{|}~'))
-so_df_c["content"] = so_df_c.apply(lambda column: re.sub(regex, '', column['content']), axis = 1)
+train_df["content"] = train_df.apply(lambda column: re.sub(regex, '', column['content']), axis = 1)
+test_df["content"] = test_df.apply(lambda column: re.sub(regex, '', column['content']), axis = 1)
+
 #get rid of random numbers
-so_df_c["content"] = so_df_c['content'].str.replace('\d+', '')
+train_df["content"] = train_df["content"].str.replace('\d+', '')
+test_df["content"] = test_df["content"].str.replace
 sql_code = so_df_c["content"]
 
 cleanedNoPunc = so_df_c
@@ -124,6 +118,17 @@ linearSVC = linearSVC.fit(vectorized, labels)
 y_train_pred = cross_val_predict(linearSVC, vectorized, labels, cv=3)
 print(confusion_matrix(labels, y_train_pred))
 
+# Plot non-normalized confusion matrix
+confusionMatrix = plot_confusion_matrix(linearSVC, X_test, y_test,
+                                 display_labels=class_names,
+                                 cmap=plt.cm.Blues,
+                                 normalize=normalize)
+disp.ax_.set_title("Confusion matrix, without normalization")
+
+print(title)
+print(disp.confusion_matrix)
+
+plt.show()
 #print(poopie.predict(so_df_c['content'][5]))
 
 
