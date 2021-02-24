@@ -64,10 +64,14 @@ test_df["content"] = test_df.apply(lambda column: re.sub(regex, '', column['cont
 #get rid of random numbers
 train_df["content"] = train_df["content"].str.replace('\d+', '')
 test_df["content"] = test_df["content"].str.replace
-sql_code = so_df_c["content"]
+sql_code = train_df["content"]
 
-cleanedNoPunc = so_df_c
+'''
+ Old, for giving the clean data elsewhere
+cleanedNoPunc = train_df
 cleanedNoPunc.to_csv('CleanedNoPunc', index = False)
+'''
+
 
 #query = re.sub(regex, ' ', query)
 
@@ -85,10 +89,10 @@ cleanedNoPunc.to_csv('CleanedNoPunc', index = False)
 #we use grams of 1, 2, and 3 but may need to increase
 #we used max and min df (document frequency) to get rid of stopwords (will need to be adjusted)
 #then, normalized everything so no value exceeds one (or goes below zero)
-tfidf = TfidfVectorizer(min_df = 8, max_df = .8, ngram_range = (1,5), stop_words = "english")
+tfidf = TfidfVectorizer(min_df = 8, max_df = .8, ngram_range = (1,6), stop_words = "english")
 
 features = tfidf.fit_transform(sql_code)
-labels = cleanedNoPunc.sql_injectable
+labels = train_df.sql_injectable
 
 vectorized = pd.DataFrame(
         features.todense(),
@@ -119,6 +123,7 @@ y_train_pred = cross_val_predict(linearSVC, vectorized, labels, cv=3)
 print(confusion_matrix(labels, y_train_pred))
 
 # Plot non-normalized confusion matrix
+"""
 confusionMatrix = plot_confusion_matrix(linearSVC, X_test, y_test,
                                  display_labels=class_names,
                                  cmap=plt.cm.Blues,
@@ -127,6 +132,7 @@ disp.ax_.set_title("Confusion matrix, without normalization")
 
 print(title)
 print(disp.confusion_matrix)
+"""
 
 plt.show()
 #print(poopie.predict(so_df_c['content'][5]))
