@@ -1,0 +1,1789 @@
+id,content,sql_injectable
+700461,"id                                          
+content           personmysql_fetch_objectperson
+sql_injectable                                   
+Name  dtype object",0
+1759577,"id                                                          
+content           indexphp html head link relstylesh
+sql_injectable                                                    
+Name  dtype object",1
+1880638,"id                                                          
+content           $query  select cities from info_table where 
+sql_injectable                                                    
+Name  dtype object",0
+2096385,"id                                                          
+content           asin sqrt power sin pi cos  acosco
+sql_injectable                                                    
+Name  dtype object",0
+2243087,"id                                                          
+content            headercontenttype texthtml charsetut
+sql_injectable                                                    
+Name  dtype object",0
+2347525,"id                                                          
+content           $con  mysql_connectlocalhostroot i
+sql_injectable                                                    
+Name  dtype object",1
+2352975,"id                                                          
+content             generates a jaxptree structure paramete
+sql_injectable                                                    
+Name  dtype object",0
+2593388,"id                                                          
+content           $month$day$yearmay  if isset$_postsub
+sql_injectable                                                    
+Name  dtype object",1
+2593388,"id                                                          
+content           $month$day$yearmay  if isset$_postsub
+sql_injectable                                                    
+Name  dtype object",1
+2670571,"id                                                          
+content           php tipping fees application requirebase
+sql_injectable                                                    
+Name  dtype object",1
+2670571,"id                                                          
+content           php tipping fees application requirebase
+sql_injectable                                                    
+Name  dtype object",1
+2720851,"id                                                          
+content           pthis color has already been enteredp$_p
+sql_injectable                                                    
+Name  dtype object",1
+2786046,"id                                                          
+content           $qry  select  from table a table b where
+sql_injectable                                                    
+Name  dtype object",1
+3075698,"id                                                          
+content            this is phps time  
+sql_injectable                                                    
+Name  dtype object",0
+3444048,"id                                                          
+content           ifisset$_getid  do something  else
+sql_injectable                                                    
+Name  dtype object",0
+3508812,"id                                                          
+content           model class ball s book a spoon plate b box cc
+sql_injectable                                                    
+Name  dtype object",0
+3722253,"id                                                          
+content            time    userhost ssss  
+sql_injectable                                                    
+Name  dtype object",0
+3936073,"id                                                          
+content           $sql   select make from items union selec
+sql_injectable                                                    
+Name  dtype object",0
+4494713,"id                                                          
+content           php $realname  $_postrealname $age  $
+sql_injectable                                                    
+Name  dtype object",1
+5135221,"id                                                          
+content           question input typetext namequestion
+sql_injectable                                                    
+Name  dtype object",1
+5238220,"id                                                          
+content           select export etc  from tbl where clientn
+sql_injectable                                                    
+Name  dtype object",0
+5447357,"id                                                          
+content           php ifisset$_postuser_name  $user_nam
+sql_injectable                                                    
+Name  dtype object",1
+5470312,"id                                                          
+content           insert into sequences key author tle
+sql_injectable                                                    
+Name  dtype object",0
+5493866,"id                                                          
+content           utf_encodeutf_general$descriptionutf_encod
+sql_injectable                                                    
+Name  dtype object",0
+5534928,"id                                                          
+content           var messagebody  $composeinputval$a
+sql_injectable                                                    
+Name  dtype object",0
+5563327,"id                                                          
+content           $row$select  select uid ufirst_name u
+sql_injectable                                                    
+Name  dtype object",1
+5563327,"id                                                          
+content           $row$select  select uid ufirst_name u
+sql_injectable                                                    
+Name  dtype object",1
+6130843,"id                                                          
+content           form methodpost actionmyactpagephp input
+sql_injectable                                                    
+Name  dtype object",1
+6148147,"id                                                          
+content           httpmydomaincomgetphpidtextmashfd
+sql_injectable                                                    
+Name  dtype object",1
+6179940,"id                                                          
+content           class mysqldb public $connection function __
+sql_injectable                                                    
+Name  dtype object",0
+6246197,"id                                                          
+content           $u_name  verisign_ssl_encryption$_postuser
+sql_injectable                                                    
+Name  dtype object",1
+6318254,"id                                                          
+content           html head titleaddress booktitle he
+sql_injectable                                                    
+Name  dtype object",1
+6318254,"id                                                          
+content           html head titleaddress booktitle he
+sql_injectable                                                    
+Name  dtype object",1
+6359615,"id                                                          
+content           name id money tom  $ barry 
+sql_injectable                                                    
+Name  dtype object",0
+6492389,"id                                                          
+content           $ids    implode  $crumbs   $
+sql_injectable                                                    
+Name  dtype object",1
+6526285,"id                                                          
+content           table idlinks widthpx border t
+sql_injectable                                                    
+Name  dtype object",0
+6617236,"id                                                          
+content            id  base_color  base_color_name  red 
+sql_injectable                                                    
+Name  dtype object",0
+6898113,"id                                                          
+content           insert into test_table bill_balance prime_ui
+sql_injectable                                                    
+Name  dtype object",0
+7089475,"id                                                          
+content           if$_requestdo  edit  $title  chan
+sql_injectable                                                    
+Name  dtype object",1
+7097534,"id                                                          
+content           $endphp $end  september    
+sql_injectable                                                    
+Name  dtype object",0
+7121636,"id                                                          
+content           dbproductdbproductslikenamedescriptionorde
+sql_injectable                                                    
+Name  dtype object",0
+7178820,"id                                                          
+content           link relstylesheet typetextcss media
+sql_injectable                                                    
+Name  dtype object",0
+7464960,"id                                                          
+content           class dbconnector extends pdo  private $host
+sql_injectable                                                    
+Name  dtype object",0
+7493522,"id                                                          
+content           ifempty$errors $id  mysql_prep$_getsu
+sql_injectable                                                    
+Name  dtype object",1
+7586863,"id                                                          
+content           $_serverrequest_uri  $_serverquery_stri
+sql_injectable                                                    
+Name  dtype object",1
+7992731,"id                                                          
+content           $setclassresult  array while$row  mysql_
+sql_injectable                                                    
+Name  dtype object",0
+8020700,"id                                                          
+content           select id value countvalue as sum from 
+sql_injectable                                                    
+Name  dtype object",0
+8021858,"id                                                          
+content           function getnews  $ajax url httpmyliv
+sql_injectable                                                    
+Name  dtype object",0
+8186692,"id                                                          
+content           function showresultstr  if str  docu
+sql_injectable                                                    
+Name  dtype object",1
+8192709,"id                       
+content           savephpexec
+sql_injectable                 
+Name  dtype object",0
+8263269,"id                                                          
+content           php $result  mysql_queryselect  from pro
+sql_injectable                                                    
+Name  dtype object",1
+8263269,"id                                                          
+content           php $result  mysql_queryselect  from pro
+sql_injectable                                                    
+Name  dtype object",1
+8267614,"id                                                          
+content           $_get$_getselect text from database where id$
+sql_injectable                                                    
+Name  dtype object",1
+8408201,"id                                                          
+content           if $_getaction  like  mysql_query
+sql_injectable                                                    
+Name  dtype object",1
+8408201,"id                                                          
+content           if $_getaction  like  mysql_query
+sql_injectable                                                    
+Name  dtype object",1
+8414520,"id                                                          
+content           applicationiniphpsettingsmysqldefault_socke
+sql_injectable                                                    
+Name  dtype object",0
+8435549,"id                                                          
+content           userid  username  email address  credits 
+sql_injectable                                                    
+Name  dtype object",0
+8450522,"id                                                          
+content           php mysql_connectsqlfeesnet  
+sql_injectable                                                    
+Name  dtype object",0
+9156735,"id                                                          
+content           package gamecom import javaiobufferedreade
+sql_injectable                                                    
+Name  dtype object",0
+9284811,"id                                                          
+content           echo shapasswordphp session_start r
+sql_injectable                                                    
+Name  dtype object",1
+9407834,"id                                                          
+content           mysql_set_charsetutfmb_internal_encoding
+sql_injectable                                                    
+Name  dtype object",1
+9476097,"id                                                          
+content           php $__error_reporting_level $serverloc
+sql_injectable                                                    
+Name  dtype object",1
+9476097,"id                                                          
+content           php $__error_reporting_level $serverloc
+sql_injectable                                                    
+Name  dtype object",1
+9986781,"id                                                          
+content           php session_start if isset$_postid
+sql_injectable                                                    
+Name  dtype object",1
+9986781,"id                                                          
+content           php session_start if isset$_postid
+sql_injectable                                                    
+Name  dtype object",1
+10001980,"id                                                         
+content           $_sessionusername  jamesecho $_session
+sql_injectable                                                    
+Name  dtype object",0
+10055321,"id                                                         
+content           else  $seatid  $_postform_submitted $qu
+sql_injectable                                                    
+Name  dtype object",1
+10133426,"id                                                         
+content           class db  function init $thishandle  my
+sql_injectable                                                    
+Name  dtype object",0
+10184924,"id                                                         
+content           $query  select endtime  starttime
+sql_injectable                                                    
+Name  dtype object",0
+10411686,"id                                                         
+content           warning mysqli_num_rows expects parameter 
+sql_injectable                                                    
+Name  dtype object",0
+10434566,"id                                                         
+content           $stmt  $thisdbprepareselect clinicclin
+sql_injectable                                                    
+Name  dtype object",0
+10434566,"id                                                         
+content           $stmt  $thisdbprepareselect clinicclin
+sql_injectable                                                    
+Name  dtype object",0
+10449535,"id                                                         
+content           html langen head meta httpequivcont
+sql_injectable                                                    
+Name  dtype object",0
+10453927,"id                                                         
+content           php require_onceconnectionsmainphp 
+sql_injectable                                                    
+Name  dtype object",1
+10453927,"id                                                         
+content           php require_onceconnectionsmainphp 
+sql_injectable                                                    
+Name  dtype object",1
+10493718,"id                                                         
+content           php require_once commonsystem_startphp 
+sql_injectable                                                    
+Name  dtype object",0
+10559670,"id                                                         
+content           form nameinput actionphp $_serverphp
+sql_injectable                                                    
+Name  dtype object",1
+10574492,"id                                                         
+content           form actionphp echo $_serverphp_self
+sql_injectable                                                    
+Name  dtype object",1
+10681942,"id                                                         
+content           if $authislogged  ifempty$email  
+sql_injectable                                                    
+Name  dtype object",1
+10805535,"id                                                         
+content           echo trn td alignrightblocationb
+sql_injectable                                                    
+Name  dtype object",0
+10813227,"id                                                         
+content           class dbdriver private $connection private $
+sql_injectable                                                    
+Name  dtype object",0
+10868434,"id                                                         
+content           $description  mysql_real_escape_string$_requ
+sql_injectable                                                    
+Name  dtype object",1
+10868434,"id                                                         
+content           $description  mysql_real_escape_string$_requ
+sql_injectable                                                    
+Name  dtype object",1
+10938084,"id                                                         
+content           form action methodpost table border
+sql_injectable                                                    
+Name  dtype object",0
+11280485,"id                                                         
+content           html titleemail senttitle php includ
+sql_injectable                                                    
+Name  dtype object",0
+11286108,"id                                                         
+content           select concat monthnamepublished     ye
+sql_injectable                                                    
+Name  dtype object",0
+11457879,"id                                                         
+content           idvalueselect  from my_ta
+sql_injectable                                                    
+Name  dtype object",0
+11549137,"id                                                         
+content           public function createuser$username $passwor
+sql_injectable                                                    
+Name  dtype object",0
+11602955,"id                                                         
+content           table product  id name descriptio
+sql_injectable                                                    
+Name  dtype object",0
+11628025,"id                                           
+content           mysql_fetch_arraymysql_fetch_object
+sql_injectable                                      
+Name  dtype object",0
+11700036,"id                                                         
+content           select list branddisplayed_text as brandna
+sql_injectable                                                    
+Name  dtype object",0
+11815760,"id                                                         
+content           function getsupport  selectedtype form acti
+sql_injectable                                                    
+Name  dtype object",0
+12031941,"id                                                         
+content           id  detail   this that   these thoseid 
+sql_injectable                                                    
+Name  dtype object",1
+12035063,"id                                                         
+content           php includeconfigphp $dir  images
+sql_injectable                                                    
+Name  dtype object",1
+12167198,"id                                                         
+content           body php $db_serverhost  localhost
+sql_injectable                                                    
+Name  dtype object",1
+12183540,"id                                             
+content           property_idproperty_attribute_idvalue
+sql_injectable                                        
+Name  dtype object",0
+12305302,"id                                                         
+content           while $result  mysql_fetch_array$sql  
+sql_injectable                                                    
+Name  dtype object",0
+12485000,"id                                                         
+content           w_id w_name   michael  samant
+sql_injectable                                                    
+Name  dtype object",0
+12564092,"id                                                         
+content           phpmysqltabledate_addedcurdatemysqlphptimes
+sql_injectable                                                    
+Name  dtype object",0
+12597390,"id                                                         
+content           php includeincludesconfigphp  
+sql_injectable                                                    
+Name  dtype object",1
+12597390,"id                                                         
+content           php includeincludesconfigphp  
+sql_injectable                                                    
+Name  dtype object",1
+12618219,"id                                                         
+content           delete from rtable where usernamesins
+sql_injectable                                                    
+Name  dtype object",0
+12645650,"id                                                         
+content           $pids  array $i   for$i   $i  coun
+sql_injectable                                                    
+Name  dtype object",0
+12770658,"id                                                         
+content           rootrootphpmyadmi
+sql_injectable                                                    
+Name  dtype object",0
+12799528,"id                                                         
+content           php ini_setdisplay_errors on error_r
+sql_injectable                                                    
+Name  dtype object",0
+12851682,"id                          
+content           mysql u root ppw
+sql_injectable                     
+Name  dtype object",0
+12994198,"id                                                         
+content           php  get our database connector requirei
+sql_injectable                                                    
+Name  dtype object",0
+13002327,"id                                                         
+content           public function viewcategories  $viewsql  
+sql_injectable                                                    
+Name  dtype object",0
+13208855,"id                                                         
+content           cake is not able to connect to the database d
+sql_injectable                                                    
+Name  dtype object",0
+13219153,"id                                                         
+content           function deq$s  if$s  null return null
+sql_injectable                                                    
+Name  dtype object",1
+13387372,"id                                                         
+content           $sql  select idtitle from tbl_accounts wher
+sql_injectable                                                    
+Name  dtype object",1
+13427024,"id                                                         
+content           doctype html php $server  localhost $
+sql_injectable                                                    
+Name  dtype object",1
+13427024,"id                                                         
+content           doctype html php $server  localhost $
+sql_injectable                                                    
+Name  dtype object",1
+13568831,"id                                                         
+content           php ini_setdisplay_errors error_repor
+sql_injectable                                                    
+Name  dtype object",0
+13607151,"id                                                         
+content           doctype html public wcdtd xhtml  t
+sql_injectable                                                    
+Name  dtype object",1
+13654247,"id                                                         
+content           php if$_post  $first_name  $_postfirst
+sql_injectable                                                    
+Name  dtype object",0
+13663674,"id                                                         
+content            
+sql_injectable                                                    
+Name  dtype object",0
+13680836,"id                                                         
+content           script typetextjavascript $function 
+sql_injectable                                                    
+Name  dtype object",0
+13765237,"id                                                         
+content           mysql desc working 
+sql_injectable                                                    
+Name  dtype object",0
+13813311,"id                                                         
+content           doctype htmlhead link relstylesheet t
+sql_injectable                                                    
+Name  dtype object",1
+13813311,"id                                                         
+content           doctype htmlhead link relstylesheet t
+sql_injectable                                                    
+Name  dtype object",1
+13952011,"id                                                         
+content           id mid value valuemid   mid  
+sql_injectable                                                    
+Name  dtype object",1
+13974835,"id                                                         
+content           sysdatabase_connectfunction database_conn
+sql_injectable                                                    
+Name  dtype object",0
+14023244,"id                                          
+content           mysql_pconnectmycnfwait_timeout
+sql_injectable                                     
+Name  dtype object",0
+14040598,"id                                                         
+content           javanetconnectexception connect address is
+sql_injectable                                                    
+Name  dtype object",0
+14084494,"id                                                         
+content            $sql  select  from products where catego
+sql_injectable                                                    
+Name  dtype object",0
+14099743,"id                                                         
+content           function submitform  $ajax type post
+sql_injectable                                                    
+Name  dtype object",0
+14146131,"id                                                         
+content           max_allowed_packetwait_timeoutini_set  memor
+sql_injectable                                                    
+Name  dtype object",0
+14172742,"id                                                         
+content           servercom accessing myemailservercom 
+sql_injectable                                                    
+Name  dtype object",0
+14605084,"id                                                         
+content           php if isset$_postinsert  require_o
+sql_injectable                                                    
+Name  dtype object",0
+14606970,"id                                                         
+content           usrbinphp f usrsharenginxwwwprocessfe
+sql_injectable                                                    
+Name  dtype object",0
+14625908,"id                                                         
+content           usersuser_typeuser_typeuser_typeinteger  f
+sql_injectable                                                    
+Name  dtype object",0
+14653778,"id                                                         
+content           include adminconfigphp $mysqli  mysqli
+sql_injectable                                                    
+Name  dtype object",0
+14757773,"id                                                         
+content           $members$members_name$membersphp session_sta
+sql_injectable                                                    
+Name  dtype object",1
+14757773,"id                                                         
+content           $members$members_name$membersphp session_sta
+sql_injectable                                                    
+Name  dtype object",1
+14819573,"id                                                         
+content           $sql  select  from images $i   if$dat
+sql_injectable                                                    
+Name  dtype object",0
+14847863,"id                                                         
+content           var datasets   all  label all data 
+sql_injectable                                                    
+Name  dtype object",0
+15031971,"id                                                         
+content           $sql  select  from $tbl_name order by perfo
+sql_injectable                                                    
+Name  dtype object",0
+15177228,"id                                                         
+content           $uemail  driggggmailcom $authkey  f
+sql_injectable                                                    
+Name  dtype object",1
+15232686,"id                                                         
+content           $departmentsql  select  from b_departments 
+sql_injectable                                                    
+Name  dtype object",1
+15314377,"id                                                         
+content           mysqliheightvarcharselect  creat
+sql_injectable                                                    
+Name  dtype object",0
+15321941,"id                                                         
+content           ifisset$submit if$pa
+sql_injectable                                                    
+Name  dtype object",0
+15346824,"id                                                         
+content           select etitle eeid ppid from events e rig
+sql_injectable                                                    
+Name  dtype object",0
+15389763,"id                                                         
+content           $contformsubmitfunction  contform 
+sql_injectable                                                    
+Name  dtype object",1
+15409099,"id                                                         
+content           json_encodelongtextmysql_real_escape_stringb
+sql_injectable                                                    
+Name  dtype object",0
+15436661,"id                                                         
+content           ifisset$_postsubmit  $bool  true $g
+sql_injectable                                                    
+Name  dtype object",1
+15436661,"id                                                         
+content           ifisset$_postsubmit  $bool  true $g
+sql_injectable                                                    
+Name  dtype object",1
+15467167,"id                                                         
+content           php session_start  php require_once
+sql_injectable                                                    
+Name  dtype object",1
+15551902,"id                                                         
+content           function get_all    initializing the co
+sql_injectable                                                    
+Name  dtype object",0
+15604617,"id                                                         
+content           $ajax url receivecountryphp the scr
+sql_injectable                                                    
+Name  dtype object",0
+15609907,"id                                            
+content           phpmysqlencryptencodeaes_encrypt
+sql_injectable                                       
+Name  dtype object",0
+15620143,"id                                                         
+content           php $uname   $pword   $errormessage 
+sql_injectable                                                    
+Name  dtype object",1
+15650028,"id                                                         
+content           if mysqli_connect_errno  echo failed to 
+sql_injectable                                                    
+Name  dtype object",1
+15694394,"id                                                         
+content           php include_once includephp include_once
+sql_injectable                                                    
+Name  dtype object",1
+15775411,"id                                                         
+content           var table  $tabletableaddclasstbc
+sql_injectable                                                    
+Name  dtype object",0
+15838067,"id                                                         
+content           ifisset$_requestcreatetranslationset 
+sql_injectable                                                    
+Name  dtype object",0
+15864379,"id                                                         
+content           php $sqbill mysql_queryselect  from bill
+sql_injectable                                                    
+Name  dtype object",1
+15875801,"id                                                         
+content           table name recipients columns recipient_id m
+sql_injectable                                                    
+Name  dtype object",0
+15984822,"id                                                         
+content           php ifisset$_gete  connect to the
+sql_injectable                                                    
+Name  dtype object",1
+15984822,"id                                                         
+content           php ifisset$_gete  connect to the
+sql_injectable                                                    
+Name  dtype object",1
+16019976,"id                                                         
+content           html php includedbphp if $_post
+sql_injectable                                                    
+Name  dtype object",1
+16124706,"id                                                         
+content           stmt  prepareinsert into tab col col v
+sql_injectable                                                    
+Name  dtype object",0
+16144903,"id                                                         
+content           usersrecords not foundphp $conn  mysql_conn
+sql_injectable                                                    
+Name  dtype object",0
+16204152,"id                                                         
+content           $myserver  sqlexpress $myuser  sa $m
+sql_injectable                                                    
+Name  dtype object",0
+16262311,"id                                                         
+content           php $database  hit $username  root $
+sql_injectable                                                    
+Name  dtype object",0
+16265046,"id                                                         
+content           datasourcejndi  jdbcehealth sqlseed  sel
+sql_injectable                                                    
+Name  dtype object",0
+16267900,"id                                                         
+content           doctype html html langenus head me
+sql_injectable                                                    
+Name  dtype object",0
+16282641,"id                                                         
+content           enter code here echo div classsearchres
+sql_injectable                                                    
+Name  dtype object",0
+16288611,"id                                                         
+content           php if isset$_post  form validation v
+sql_injectable                                                    
+Name  dtype object",1
+16374908,"id                                                         
+content           php require_onceincludesconnectionphp
+sql_injectable                                                    
+Name  dtype object",1
+16374908,"id                                                         
+content           php require_onceincludesconnectionphp
+sql_injectable                                                    
+Name  dtype object",1
+16374908,"id                                                         
+content           php require_onceincludesconnectionphp
+sql_injectable                                                    
+Name  dtype object",1
+16374908,"id                                                         
+content           php require_onceincludesconnectionphp
+sql_injectable                                                    
+Name  dtype object",1
+16394793,"id                                                         
+content           form idclassifiedsform enctypemultipart
+sql_injectable                                                    
+Name  dtype object",0
+16456307,"id                                                         
+content           doctype html public wcdtd xhtml  t
+sql_injectable                                                    
+Name  dtype object",0
+16509768,"id                                                         
+content           $query  $_getquery $sql select f_name
+sql_injectable                                                    
+Name  dtype object",1
+16610066,"id                                                         
+content           php while$rowmysql_fetch_array$root  
+sql_injectable                                                    
+Name  dtype object",0
+16682242,"id                                                         
+content           _postbodies  nsmutabledictionary alloc ini
+sql_injectable                                                    
+Name  dtype object",0
+16730741,"id                                                         
+content           config modules super_awesome version
+sql_injectable                                                    
+Name  dtype object",0
+16838476,"id                                                         
+content           td classhours colspan php $hour  
+sql_injectable                                                    
+Name  dtype object",1
+16838476,"id                                                         
+content           td classhours colspan php $hour  
+sql_injectable                                                    
+Name  dtype object",1
+16962363,"id                                                         
+content           form action methodpost table cellspac
+sql_injectable                                                    
+Name  dtype object",1
+16962363,"id                                                         
+content           form action methodpost table cellspac
+sql_injectable                                                    
+Name  dtype object",1
+16968637,"id                                                         
+content           php $query  select  from applications $
+sql_injectable                                                    
+Name  dtype object",0
+17082943,"id                                                         
+content           false or truephp include connectiontodb
+sql_injectable                                                    
+Name  dtype object",1
+17155522,"id                
+content              id
+sql_injectable           
+Name  dtype object",0
+17158314,"id                                                         
+content           query  select  from tablea where somethin
+sql_injectable                                                    
+Name  dtype object",0
+17331557,"id                                                         
+content           $db  jfactorygetdbo $query  $dbgetque
+sql_injectable                                                    
+Name  dtype object",0
+17355250,"id                                                         
+content           phpphpsqlselect  from table_name where col
+sql_injectable                                                    
+Name  dtype object",1
+17358143,"id                                                         
+content           dataconfig datasource typejdbcdatasource
+sql_injectable                                                    
+Name  dtype object",0
+17426749,"id                                                         
+content           tbody php while $row  mysql_fetch_assoc
+sql_injectable                                                    
+Name  dtype object",0
+17450547,"id                                                         
+content           iconviso utf $valueerror_rep
+sql_injectable                                                    
+Name  dtype object",0
+17534603,"id                                                         
+content           $profit  $quote_  $entry if $productcount
+sql_injectable                                                    
+Name  dtype object",0
+17639153,"id                                                         
+content           html body form action methodpost na
+sql_injectable                                                    
+Name  dtype object",1
+17639153,"id                                                         
+content           html body form action methodpost na
+sql_injectable                                                    
+Name  dtype object",1
+17737671,"id                                                         
+content           $getscripthttpwwwdomaincomgetdataphp
+sql_injectable                                                    
+Name  dtype object",0
+17812654,"id                                                         
+content           select the item from the table $sql  selec
+sql_injectable                                                    
+Name  dtype object",0
+17823199,"id                                                         
+content           ptest with line breakp pimg srcim
+sql_injectable                                                    
+Name  dtype object",0
+17880593,"id                                                         
+content           public class gcmbroadcast  post pathgetg
+sql_injectable                                                    
+Name  dtype object",0
+17881785,"id                    
+content           webconnector
+sql_injectable               
+Name  dtype object",0
+17934393,"id                                                         
+content           mysqli_fetch_object__construct__construct$
+sql_injectable                                                    
+Name  dtype object",0
+17950257,"id                                                         
+content            after all validations are okay $insert  
+sql_injectable                                                    
+Name  dtype object",0
+17989298,"id                                                         
+content           $cfgservers$iuser  root $cfgse
+sql_injectable                                                    
+Name  dtype object",0
+18028830,"id                                                         
+content           $userp  $sqlprepareselect user passwd fr
+sql_injectable                                                    
+Name  dtype object",0
+18039317,"id                                                         
+content           insert into mytable data values serialize
+sql_injectable                                                    
+Name  dtype object",0
+18040861,"id                                                         
+content           class options  private $options  null publi
+sql_injectable                                                    
+Name  dtype object",0
+18088317,"id                                                         
+content           php includeconnectphp $id  $_getid
+sql_injectable                                                    
+Name  dtype object",1
+18118455,"id                                                         
+content           php mysql_connectusername
+sql_injectable                                                    
+Name  dtype object",0
+18182861,"id                                                         
+content           form form onsubmitcheck_cat_to_saver
+sql_injectable                                                    
+Name  dtype object",1
+18182861,"id                                                         
+content           form form onsubmitcheck_cat_to_saver
+sql_injectable                                                    
+Name  dtype object",0
+18227612,"id                                                         
+content           php $q$_getq $con  mysqli_connectlo
+sql_injectable                                                    
+Name  dtype object",1
+18382306,"id                                                         
+content           php include_oncedbphp session_start
+sql_injectable                                                    
+Name  dtype object",1
+18672703,"id                                                         
+content           $management_lcfruh_sql  select countschicht
+sql_injectable                                                    
+Name  dtype object",0
+18967141,"id                                                         
+content           function cart echo table table border
+sql_injectable                                                    
+Name  dtype object",1
+19293061,"id                                                         
+content           html head titletesting querytitle sc
+sql_injectable                                                    
+Name  dtype object",1
+19301069,"id                                                         
+content           php $con  mysql_connectlocalhost root
+sql_injectable                                                    
+Name  dtype object",0
+19632474,"id                                                         
+content           input typetext iduser_name  input ty
+sql_injectable                                                    
+Name  dtype object",1
+19643494,"id                                                         
+content           monday open time   closed time   t
+sql_injectable                                                    
+Name  dtype object",0
+20365188,"id                                                         
+content           sumuntung budi s skomwhere idpertanyaan  
+sql_injectable                                                    
+Name  dtype object",1
+20730341,"id                                                         
+content           php try  $name  $_getname try  $stmt
+sql_injectable                                                    
+Name  dtype object",0
+20775369,"id                                
+content           idr_iddatadatar_idr_id
+sql_injectable                           
+Name  dtype object",0
+20852868,"id                                                         
+content           php session_start ob_start $hostloca
+sql_injectable                                                    
+Name  dtype object",1
+20985911,"id                                                         
+content           $conn  mysql_connectlocalhost root 
+sql_injectable                                                    
+Name  dtype object",0
+21009465,"id                                             
+content           delete from some_table where id in
+sql_injectable                                        
+Name  dtype object",0
+21238502,"id                                                         
+content           php $dbnamejr  indique o nome do banco
+sql_injectable                                                    
+Name  dtype object",1
+21238502,"id                                                         
+content           php $dbnamejr  indique o nome do banco
+sql_injectable                                                    
+Name  dtype object",1
+21365026,"id                                                         
+content           divjsontestphpjsontestphpphp $resultmysql
+sql_injectable                                                    
+Name  dtype object",0
+21709891,"id                                                         
+content           select user room startdatetime enddatetime
+sql_injectable                                                    
+Name  dtype object",0
+21724355,"id                                                         
+content           $uploaddir  upload  if the form has bee
+sql_injectable                                                    
+Name  dtype object",0
+21726659,"id                                                         
+content           var grid  new extgrideditorgridpanel id 
+sql_injectable                                                    
+Name  dtype object",1
+21782217,"id                                                         
+content           php if  isset $_postsubmit    $emai
+sql_injectable                                                    
+Name  dtype object",1
+21782217,"id                                                         
+content           php if  isset $_postsubmit    $emai
+sql_injectable                                                    
+Name  dtype object",1
+21971127,"id                                                         
+content             id  value  
+sql_injectable                                                    
+Name  dtype object",1
+21982181,"id                                                         
+content           script typetextjavascript function selec
+sql_injectable                                                    
+Name  dtype object",0
+22113515,"id                                                         
+content           $thisconnect  new mysqlimysqlxxxcomr
+sql_injectable                                                    
+Name  dtype object",0
+22197545,"id                                                         
+content           require_once vendorphpactiverecordphpacti
+sql_injectable                                                    
+Name  dtype object",0
+22271889,"id                                                         
+content           $query  select to from rank gender p
+sql_injectable                                                    
+Name  dtype object",1
+22280572,"id                                                         
+content           php $config  array sqlhost  localhost
+sql_injectable                                                    
+Name  dtype object",0
+22285318,"id                                                         
+content           mysqladmin flushhosts or mysqladmin umyname
+sql_injectable                                                    
+Name  dtype object",0
+22394830,"id                                                         
+content           php if $_serverrequest_method  post
+sql_injectable                                                    
+Name  dtype object",1
+22536923,"id                                                         
+content           form idregisterform div idregistertha
+sql_injectable                                                    
+Name  dtype object",1
+22536923,"id                                                         
+content           form idregisterform div idregistertha
+sql_injectable                                                    
+Name  dtype object",1
+22563161,"id                                                         
+content           if$okay  true $dbc  mysql_connectlocal
+sql_injectable                                                    
+Name  dtype object",1
+22660777,"id                                                         
+content           update options set option$_postoption 
+sql_injectable                                                    
+Name  dtype object",1
+22886176,"id                                                         
+content           table userinfoemail password table foodnam
+sql_injectable                                                    
+Name  dtype object",1
+22886176,"id                                                         
+content           table userinfoemail password table foodnam
+sql_injectable                                                    
+Name  dtype object",1
+22927988,"id                                                         
+content           voidinsertdetailsnsstring useremail log
+sql_injectable                                                    
+Name  dtype object",0
+23055973,"id                                                         
+content           php $mysql_host  mysqlwebhostcom $
+sql_injectable                                                    
+Name  dtype object",1
+23387244,"id                                                         
+content           $sql  select igraciid utakmiceplayer_id 
+sql_injectable                                                    
+Name  dtype object",0
+23427933,"id                                                         
+content           doctype html public wcdtd xhtml  s
+sql_injectable                                                    
+Name  dtype object",0
+23533968,"id                                                         
+content           ______________________________________________
+sql_injectable                                                    
+Name  dtype object",1
+23550254,"id                                                         
+content           php mysql_connectlocalhost root  o
+sql_injectable                                                    
+Name  dtype object",0
+23583214,"id                                                         
+content           while $row  mysqli_fetch_array$result  e
+sql_injectable                                                    
+Name  dtype object",0
+23590313,"id                                                         
+content           if isset$_postusername  isset$_post
+sql_injectable                                                    
+Name  dtype object",1
+23600992,"id                                                         
+content           if windowxmlhttprequest   code for ie
+sql_injectable                                                    
+Name  dtype object",0
+23676740,"id                                                         
+content           aissqlstatehy general error
+sql_injectable                                                    
+Name  dtype object",0
+23695330,"id                                                         
+content           oracledbclass oracledb  private $connec $aff
+sql_injectable                                                    
+Name  dtype object",0
+23878806,"id                                                         
+content           form actiondb_connectphp methodpost 
+sql_injectable                                                    
+Name  dtype object",1
+23878806,"id                                                         
+content           form actiondb_connectphp methodpost 
+sql_injectable                                                    
+Name  dtype object",1
+23948524,"id                                                         
+content           body php connecting to database $server 
+sql_injectable                                                    
+Name  dtype object",1
+24036894,"id                                                         
+content           echo imgphp session_start $conmysql_c
+sql_injectable                                                    
+Name  dtype object",0
+24205668,"id                                                         
+content           tartikelpict 
+sql_injectable                                                    
+Name  dtype object",0
+24283608,"id                                                         
+content           php $querymysqli_query$conselect  from 
+sql_injectable                                                    
+Name  dtype object",1
+24283608,"id                                                         
+content           php $querymysqli_query$conselect  from 
+sql_injectable                                                    
+Name  dtype object",1
+24354551,"id                                                         
+content           optionselect$querymysql_queryselect car
+sql_injectable                                                    
+Name  dtype object",0
+24376688,"id                                                         
+content           php $meta_description  ingrese a su cuenta
+sql_injectable                                                    
+Name  dtype object",1
+24376688,"id                                                         
+content           php $meta_description  ingrese a su cuenta
+sql_injectable                                                    
+Name  dtype object",1
+24376688,"id                                                         
+content           php $meta_description  ingrese a su cuenta
+sql_injectable                                                    
+Name  dtype object",1
+24422862,"id                                                         
+content              
+sql_injectable                                                    
+Name  dtype object",0
+24440508,"id                                                         
+content           var threads   tablename threads adapter
+sql_injectable                                                    
+Name  dtype object",0
+24560295,"id                                                         
+content           boutiquetwigcountry_extension class boutiq
+sql_injectable                                                    
+Name  dtype object",0
+24579920,"id                                                         
+content           phpwherenamewhatbobphpwheretype$whatc
+sql_injectable                                                    
+Name  dtype object",0
+24582445,"id                                                         
+content           $query_args  array s  mysql_real_escape_
+sql_injectable                                                    
+Name  dtype object",1
+24582445,"id                                                         
+content           $query_args  array s  mysql_real_escape_
+sql_injectable                                                    
+Name  dtype object",1
+24689116,"id                                                         
+content           require dbconnectphp session_start $
+sql_injectable                                                    
+Name  dtype object",1
+24769763,"id                                                         
+content           php $q  $_getq $con  mysqli_connect
+sql_injectable                                                    
+Name  dtype object",0
+24769763,"id                                                         
+content           php $q  $_getq $con  mysqli_connect
+sql_injectable                                                    
+Name  dtype object",0
+24794367,"id                                                         
+content           thu jul    error client 
+sql_injectable                                                    
+Name  dtype object",0
+24802099,"id                                                         
+content           php  error reporting error_reportinge_al
+sql_injectable                                                    
+Name  dtype object",1
+24866509,"id                                                         
+content           script languagejavascript function valid
+sql_injectable                                                    
+Name  dtype object",1
+24866509,"id                                                         
+content           script languagejavascript function valid
+sql_injectable                                                    
+Name  dtype object",1
+24882069,"id                                                         
+content           php ifisset$_postsubmit ifempty$
+sql_injectable                                                    
+Name  dtype object",1
+24900609,"id                                                         
+content           doctype html html php includelayouth
+sql_injectable                                                    
+Name  dtype object",1
+24988390,"id                                                         
+content           mysitecomrequestphpfileididjsonidjson 
+sql_injectable                                                    
+Name  dtype object",0
+25061946,"id                                                         
+content           function showwidth$   get the value of my
+sql_injectable                                                    
+Name  dtype object",1
+25061946,"id                                                         
+content           function showwidth$   get the value of my
+sql_injectable                                                    
+Name  dtype object",1
+25093759,"id                                                         
+content           $linemysql  implode$linearray $linem
+sql_injectable                                                    
+Name  dtype object",0
+25132301,"id                                                         
+content           form actionprocessphp methodpost name
+sql_injectable                                                    
+Name  dtype object",1
+25163790,"id                                                         
+content           select  from table as tablealiasselect  fr
+sql_injectable                                                    
+Name  dtype object",0
+25376706,"id                                                         
+content           php mysql_connectlocalhost root root
+sql_injectable                                                    
+Name  dtype object",1
+25376706,"id                                                         
+content           php mysql_connectlocalhost root root
+sql_injectable                                                    
+Name  dtype object",1
+25399563,"id                                                         
+content           php mysql_connectlocalhost root  
+sql_injectable                                                    
+Name  dtype object",1
+25403516,"id                                                         
+content           url php echo base_url  user_mgetadmini
+sql_injectable                                                    
+Name  dtype object",1
+25403516,"id                                                         
+content           url php echo base_url  user_mgetadmini
+sql_injectable                                                    
+Name  dtype object",1
+25533268,"id                                                         
+content           $products  json_decodejson_encodesimplexml_
+sql_injectable                                                    
+Name  dtype object",0
+25567536,"id                                                         
+content           create table if not exists eurobidutente 
+sql_injectable                                                    
+Name  dtype object",0
+25586718,"id                                                         
+content           php define _jexec   define jpath_ba
+sql_injectable                                                    
+Name  dtype object",0
+25658568,"id                                                         
+content           php include_onceadmindbconphp ifisse
+sql_injectable                                                    
+Name  dtype object",1
+25694403,"id                                                         
+content           public int countpartialmatchingticketilistin
+sql_injectable                                                    
+Name  dtype object",0
+25766134,"id                                                         
+content           php  path to phpsdk includeconfigphp
+sql_injectable                                                    
+Name  dtype object",1
+25819913,"id                                                         
+content           $inputclassonkeyupfunction $ajax
+sql_injectable                                                    
+Name  dtype object",0
+25858625,"id                                                         
+content           load data local infilereplace into products x
+sql_injectable                                                    
+Name  dtype object",0
+25864871,"id                                                         
+content           return array doctrine  array connection
+sql_injectable                                                    
+Name  dtype object",0
+25877265,"id                                                         
+content           sudo u wwwdata h appconsole doctrinesch
+sql_injectable                                                    
+Name  dtype object",0
+25878665,"id                                                         
+content           require_once mysql_loginphp $db_server  m
+sql_injectable                                                    
+Name  dtype object",1
+25878665,"id                                                         
+content           require_once mysql_loginphp $db_server  m
+sql_injectable                                                    
+Name  dtype object",1
+25897698,"id                                                         
+content           php error_reporting e_all  e_notice if 
+sql_injectable                                                    
+Name  dtype object",1
+25966100,"id                                                         
+content           php  first we execute our common code to c
+sql_injectable                                                    
+Name  dtype object",1
+26009095,"id                                                         
+content           c_pricei_typea_typeida_typelinei_typehea
+sql_injectable                                                    
+Name  dtype object",1
+26009095,"id                                                         
+content           c_pricei_typea_typeida_typelinei_typehea
+sql_injectable                                                    
+Name  dtype object",1
+26009095,"id                                                         
+content           c_pricei_typea_typeida_typelinei_typehea
+sql_injectable                                                    
+Name  dtype object",1
+26053597,"id                                                         
+content           definedb_server localhost define db_
+sql_injectable                                                    
+Name  dtype object",1
+26211620,"id                                                         
+content           php date_default_timezone_setutc try  
+sql_injectable                                                    
+Name  dtype object",0
+26280944,"id                                                         
+content           step    step   
+sql_injectable                                                    
+Name  dtype object",0
+26425194,"id                                                         
+content             binds a parameter to the specified varia
+sql_injectable                                                    
+Name  dtype object",0
+26463905,"id                                                         
+content           $title to store the values to insert into th
+sql_injectable                                                    
+Name  dtype object",1
+26463905,"id                                                         
+content           $title to store the values to insert into th
+sql_injectable                                                    
+Name  dtype object",0
+26674125,"id                                                         
+content           select id name emailaddress from acco
+sql_injectable                                                    
+Name  dtype object",0
+26714364,"id                                                         
+content           $maker  select vidmaker from videoinformatio
+sql_injectable                                                    
+Name  dtype object",1
+26714364,"id                                                         
+content           $maker  select vidmaker from videoinformatio
+sql_injectable                                                    
+Name  dtype object",1
+26840341,"id                                                         
+content           idno row foundphp ifisset$_sessionwo
+sql_injectable                                                    
+Name  dtype object",1
+26840341,"id                                                         
+content           idno row foundphp ifisset$_sessionwo
+sql_injectable                                                    
+Name  dtype object",1
+26893921,"id                                                         
+content           require_onceconnectphp if isset$_post
+sql_injectable                                                    
+Name  dtype object",1
+26893921,"id                                                         
+content           require_onceconnectphp if isset$_post
+sql_injectable                                                    
+Name  dtype object",1
+26939571,"id                                                         
+content           click to show typex data some data shown via
+sql_injectable                                                    
+Name  dtype object",0
+27179478,"id                                                         
+content            session_start $config  dirname__file__
+sql_injectable                                                    
+Name  dtype object",0
+27211749,"id                                                         
+content           form actionsearchphp methodget input
+sql_injectable                                                    
+Name  dtype object",1
+27585875,"id                                                         
+content           foreach $reponses as $reponse  $valreponse
+sql_injectable                                                    
+Name  dtype object",0
+27585875,"id                                                         
+content           foreach $reponses as $reponse  $valreponse
+sql_injectable                                                    
+Name  dtype object",0
+27587065,"id                                                         
+content           form action methodpost nameformpictur
+sql_injectable                                                    
+Name  dtype object",0
+27656088,"id                                                         
+content           php $db_host  localhost $db_user  ms_a
+sql_injectable                                                    
+Name  dtype object",1
+27675155,"id                                                         
+content           postphp includefunctionsphp get_header
+sql_injectable                                                    
+Name  dtype object",1
+27749380,"id                                                         
+content           input typehidden nameprtks valuehttp
+sql_injectable                                                    
+Name  dtype object",0
+27769767,"id                                                         
+content           trtdphototdtdimg srcimagephpid
+sql_injectable                                                    
+Name  dtype object",1
+27769767,"id                                                         
+content           trtdphototdtdimg srcimagephpid
+sql_injectable                                                    
+Name  dtype object",1
+27917522,"id                                                         
+content           php ob_start session_start $conn  new
+sql_injectable                                                    
+Name  dtype object",1
+27971612,"id                                                         
+content           public class gcmserver extends activity  void
+sql_injectable                                                    
+Name  dtype object",0
+28118531,"id                                                         
+content           namejohnfirstsecond
+sql_injectable                                                    
+Name  dtype object",0
+28135679,"id                                                         
+content           php  pdo optionsattributes $opt  array p
+sql_injectable                                                    
+Name  dtype object",1
+28201094,"id                                                         
+content            session_start require_onceconnectphp
+sql_injectable                                                    
+Name  dtype object",1
+28201094,"id                                                         
+content            session_start require_onceconnectphp
+sql_injectable                                                    
+Name  dtype object",1
+28221402,"id                                                         
+content           var comment   cc $ajax url phpadd_r
+sql_injectable                                                    
+Name  dtype object",1
+28221402,"id                                                         
+content           var comment   cc $ajax url phpadd_r
+sql_injectable                                                    
+Name  dtype object",1
+28324603,"id                                                         
+content           php if isset$_postgigdate $gigdate 
+sql_injectable                                                    
+Name  dtype object",1
+28327784,"id                                                         
+content           tda href datap $partnumberx  
+sql_injectable                                                    
+Name  dtype object",0
+28404462,"id                                                         
+content           head script src  httpcodejquerycomj
+sql_injectable                                                    
+Name  dtype object",1
+28404462,"id                                                         
+content           head script src  httpcodejquerycomj
+sql_injectable                                                    
+Name  dtype object",1
+28449722,"id                                                         
+content           $documentreadyfunction $datepicker
+sql_injectable                                                    
+Name  dtype object",0
+28449722,"id                                                         
+content           $documentreadyfunction $datepicker
+sql_injectable                                                    
+Name  dtype object",0
+28742764,"id                                                         
+content           table friends  friendship_id int not 
+sql_injectable                                                    
+Name  dtype object",1
+28742764,"id                                                         
+content           table friends  friendship_id int not 
+sql_injectable                                                    
+Name  dtype object",1
+28840932,"id                                                         
+content           php $input  $_getinput if $input  $
+sql_injectable                                                    
+Name  dtype object",0
+28840932,"id                                                         
+content           php $input  $_getinput if $input  $
+sql_injectable                                                    
+Name  dtype object",0
+28840932,"id                                                         
+content           php $input  $_getinput if $input  $
+sql_injectable                                                    
+Name  dtype object",0
+28863391,"id                                                         
+content           on update if rowvaluerowvalvalue   th
+sql_injectable                                                    
+Name  dtype object",0
+28915254,"id                                                         
+content           php if isset$_postsubmit   t
+sql_injectable                                                    
+Name  dtype object",1
+29006511,"id                                                         
+content           $connection php function entertodb$user $p
+sql_injectable                                                    
+Name  dtype object",1
+29007436,"id                                                         
+content           php mysql_connect root  
+sql_injectable                                                    
+Name  dtype object",1
+29007436,"id                                                         
+content           php mysql_connect root  
+sql_injectable                                                    
+Name  dtype object",1
+29024361,"id                                                         
+content           form methodpost actionsecurityphp in
+sql_injectable                                                    
+Name  dtype object",1
+29118837,"id                                                         
+content           php   consider and apply voucher codes 
+sql_injectable                                                    
+Name  dtype object",1
+29388894,"id                                                         
+content           php $idpagearray $idcompetition
+sql_injectable                                                    
+Name  dtype object",0
+29483954,"id                                                         
+content            else if$ctoken  $utoken   our tokens
+sql_injectable                                                    
+Name  dtype object",0
+29495663,"id                                                         
+content           php function datarelasi $ambil  mysql_qu
+sql_injectable                                                    
+Name  dtype object",0
+29503888,"id                                  
+content           wget r k l websiteuri
+sql_injectable                             
+Name  dtype object",0
+29508756,"id                                                         
+content           docker run name dbdata v data e pgdata
+sql_injectable                                                    
+Name  dtype object",0
+29586703,"id                                                         
+content           public function querysqlstatement $sql $fetc
+sql_injectable                                                    
+Name  dtype object",0
+29609125,"id                                                         
+content           img src$imagepath  img srccwampw
+sql_injectable                                                    
+Name  dtype object",0
+29651089,"id                                                         
+content           php includeheaderphp includeconnect
+sql_injectable                                                    
+Name  dtype object",0
+29878772,"id                                                         
+content           approvedwhile $row  mysql_fetch_array$resul
+sql_injectable                                                    
+Name  dtype object",0
+30000616,"id                                                         
+content           div subject php $conn  new mysqlifgdfg
+sql_injectable                                                    
+Name  dtype object",1
+30000616,"id                                                         
+content           div subject php $conn  new mysqlifgdfg
+sql_injectable                                                    
+Name  dtype object",1
+30082227,"id                
+content                NaN
+sql_injectable           
+Name  dtype object",0
+30124268,"id                                                         
+content           nav classnavbar navbarinverse navbarfixed
+sql_injectable                                                    
+Name  dtype object",0
+30172082,"id                                                         
+content           php include_once dbapidbconnectphp s
+sql_injectable                                                    
+Name  dtype object",0
+30172854,"id                                                         
+content           dbtabletablenameinsert$variabletable
+sql_injectable                                                    
+Name  dtype object",0
+30582961,"id                                                         
+content           php $dbh  new pdomysqlhostlocalhostdbn
+sql_injectable                                                    
+Name  dtype object",0
+30779143,"id                                                         
+content           syntax error unexpected  in file at line 
+sql_injectable                                                    
+Name  dtype object",0
+30781661,"id                                                         
+content           php session_start $id  $_sessionuser_i
+sql_injectable                                                    
+Name  dtype object",1
+31033907,"id                                                         
+content           php class debug  private $mysql function __
+sql_injectable                                                    
+Name  dtype object",0
+31173563,"id                                                         
+content           file_get_contentsphp function download_re
+sql_injectable                                                    
+Name  dtype object",0
+31175569,"id                                                         
+content           loginphpaccess denied for user urbanaslo
+sql_injectable                                                    
+Name  dtype object",1
+31175569,"id                                                         
+content           loginphpaccess denied for user urbanaslo
+sql_injectable                                                    
+Name  dtype object",1
+31175569,"id                                                         
+content           loginphpaccess denied for user urbanaslo
+sql_injectable                                                    
+Name  dtype object",1
+31354621,"id                                                         
+content           php   wishlist page template   author
+sql_injectable                                                    
+Name  dtype object",1
+31363851,"id                                                         
+content           php  this file connects to the database in
+sql_injectable                                                    
+Name  dtype object",1
+31363851,"id                                                         
+content           php  this file connects to the database in
+sql_injectable                                                    
+Name  dtype object",1
+31460663,"id                                                         
+content           $parameters  array keyexample  $cli
+sql_injectable                                                    
+Name  dtype object",0
+31494561,"id                                                         
+content           $result  file_get_contentsrequest_urlsendm
+sql_injectable                                                    
+Name  dtype object",0
+31594773,"id                                                         
+content           january  name    staff aful
+sql_injectable                                                    
+Name  dtype object",1
+31594773,"id                                                         
+content           january  name    staff aful
+sql_injectable                                                    
+Name  dtype object",1
+31648883,"id                                                         
+content           php $servername  localhost $username  
+sql_injectable                                                    
+Name  dtype object",1
+31648883,"id                                                         
+content           php $servername  localhost $username  
+sql_injectable                                                    
+Name  dtype object",1
+31664812,"id                                                         
+content           $hash  password_hash$password password_bcry
+sql_injectable                                                    
+Name  dtype object",1
+31665664,"id                                                         
+content           button value classroundbutton
+sql_injectable                                                    
+Name  dtype object",1
+31665664,"id                                                         
+content           button value classroundbutton
+sql_injectable                                                    
+Name  dtype object",1
+31900537,"id                                                         
+content           php namespace domainentity use doctrineco
+sql_injectable                                                    
+Name  dtype object",0
+32099686,"id                                                         
+content           php require_once phpdbphp $conn  dbcon
+sql_injectable                                                    
+Name  dtype object",0
+32283575,"id                                                         
+content           $input  str_replacearray_$_post
+sql_injectable                                                    
+Name  dtype object",0
+32283575,"id                                                         
+content           $input  str_replacearray_$_post
+sql_injectable                                                    
+Name  dtype object",0
+32356984,"id                                                         
+content           php $mysqli  new mysqlilocalhost root
+sql_injectable                                                    
+Name  dtype object",1
+32356984,"id                                                         
+content           php $mysqli  new mysqlilocalhost root
+sql_injectable                                                    
+Name  dtype object",1
+32492510,"id                                                         
+content           php $con  mysql_connectlocalhostroot
+sql_injectable                                                    
+Name  dtype object",0
+32576267,"id                                                         
+content           swifttable viewjsonrestaurantnamesrestau
+sql_injectable                                                    
+Name  dtype object",0
+32607230,"id                                                         
+content           php if $_postlogin  $uname  $_post
+sql_injectable                                                    
+Name  dtype object",1
+32684016,"id                                                         
+content           php echo strongstack overflow resultsst
+sql_injectable                                                    
+Name  dtype object",0
+32693144,"id                                                         
+content           php includedbphp $conn  mysql_connect
+sql_injectable                                                    
+Name  dtype object",0
+32695491,"id                                                         
+content           _az_azaza
+sql_injectable                                                    
+Name  dtype object",1
+32696569,"id                                                         
+content           $user$_postusername $query  select lon
+sql_injectable                                                    
+Name  dtype object",1
+32738534,"id                                                         
+content           function gettoptenselects$array  $result  
+sql_injectable                                                    
+Name  dtype object",0
+32961907,"id                                                         
+content           if isset$_postupdate  $statquery  u
+sql_injectable                                                    
+Name  dtype object",1
+32961907,"id                                                         
+content           if isset$_postupdate  $statquery  u
+sql_injectable                                                    
+Name  dtype object",1
+32979443,"id                                                         
+content           $p  magegetmodelcatalogproduct $pse
+sql_injectable                                                    
+Name  dtype object",0
+33163945,"id                                                         
+content           course  lecturer  time css  john  
+sql_injectable                                                    
+Name  dtype object",0
+33211955,"id                                                         
+content           php if$_sessionadmin    echodiv i
+sql_injectable                                                    
+Name  dtype object",1
+33211955,"id                                                         
+content           php if$_sessionadmin    echodiv i
+sql_injectable                                                    
+Name  dtype object",1
+33230151,"id                                                         
+content           indexphpphp ini_setdefault_charsetutf
+sql_injectable                                                    
+Name  dtype object",0
+33271684,"id                                                         
+content           php session_start includeincludes
+sql_injectable                                                    
+Name  dtype object",1
+33271684,"id                                                         
+content           php session_start includeincludes
+sql_injectable                                                    
+Name  dtype object",1
+33271684,"id                                                         
+content           php session_start includeincludes
+sql_injectable                                                    
+Name  dtype object",1
+33303658,"id                                                         
+content           php $dbhostxxxx $dbusrxxxx $dbpass
+sql_injectable                                                    
+Name  dtype object",1
+33693609,"id                        
+content           activator 
+sql_injectable                   
+Name  dtype object",0
+34056343,"id                                                         
+content           $_sessionphp session_start ob_start in
+sql_injectable                                                    
+Name  dtype object",0
+34175513,"id                                                         
+content           create table if not exists trip  id int no
+sql_injectable                                                    
+Name  dtype object",0
+34221009,"id                                                         
+content           form classformhorizontal roleform meth
+sql_injectable                                                    
+Name  dtype object",1
+34221009,"id                                                         
+content           form classformhorizontal roleform meth
+sql_injectable                                                    
+Name  dtype object",1
+34300465,"id                                                         
+content           php include database_connectionphp $quer
+sql_injectable                                                    
+Name  dtype object",0
+34371007,"id                                                         
+content           $order  select name name_id from requests w
+sql_injectable                                                    
+Name  dtype object",0
+34461144,"id                                                         
+content           questionsanswersinclude dbphp $exam_title
+sql_injectable                                                    
+Name  dtype object",1
+34511513,"id                                                         
+content           public function getproducts$data  array 
+sql_injectable                                                    
+Name  dtype object",0
+34645085,"id                                                         
+content           mysqli_stmtbind_paramform actionphp 
+sql_injectable                                                    
+Name  dtype object",0
+34695873,"id                                                      
+content           $xml  simplexml_load_string$_postzitem
+sql_injectable                                                 
+Name  dtype object",0
+34797690,"id                                                         
+content           includedbconnectphp $results  $mysqli
+sql_injectable                                                    
+Name  dtype object",0
+34888868,"id                                                         
+content           $lastlineselect coalesceid  from $sectio
+sql_injectable                                                    
+Name  dtype object",0
+34902426,"id                                                         
+content           definedb_server localhost definedb_u
+sql_injectable                                                    
+Name  dtype object",0
+34903896,"id                        
+content           extphp_mysqldll
+sql_injectable                   
+Name  dtype object",0
+34987860,"id                                                         
+content           mysql_real_escape_string$_sessioninput valu
+sql_injectable                                                    
+Name  dtype object",1
+35017946,"id                                                         
+content           htmlphphtmlms accessphpms accessmysqlphpmyadmi
+sql_injectable                                                    
+Name  dtype object",0
+35295874,"id                                                         
+content           $con  mysqli_connect$host$uname$pwd$db 
+sql_injectable                                                    
+Name  dtype object",1
+35652873,"id                                                         
+content           php $con  mysqli_connectlocalhost user
+sql_injectable                                                    
+Name  dtype object",0
+35810377,"id                                                         
+content           a hrefdetailsphp form methodpost acti
+sql_injectable                                                    
+Name  dtype object",0
+35977057,"id                                                         
+content           php $mysql_pekare new mysqli host  use
+sql_injectable                                                    
+Name  dtype object",0
+35977057,"id                                                         
+content           php $mysql_pekare new mysqli host  use
+sql_injectable                                                    
+Name  dtype object",0
+36165967,"id                                                         
+content           productoingresodevoprovtransacciones ifisset
+sql_injectable                                                    
+Name  dtype object",1
+36240700,"id                                                         
+content           htmldoctype html html xmlnshttpwww
+sql_injectable                                                    
+Name  dtype object",1
+36332329,"id                                                         
+content           php $connection mysqli_connectlocalhost
+sql_injectable                                                    
+Name  dtype object",0
+36332329,"id                                                         
+content           php $connection mysqli_connectlocalhost
+sql_injectable                                                    
+Name  dtype object",1

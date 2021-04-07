@@ -6,36 +6,27 @@ Created on Thu Oct 22 13:15:04 2020
 @author: robertklock
 """
 
-import nltk
 import matplotlib.pyplot as plt
-import numpy as np
 from csv import reader
 from nltk.corpus import treebank
 from nltk.tokenize import word_tokenize, sent_tokenize
 import pandas as pd
-from sklearn.metrics import mean_squared_error
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.tree import DecisionTreeRegressor
-
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import cross_val_predict
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import plot_confusion_matrix
 from sklearn.feature_selection import chi2
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import LinearSVC
-import tensorflow as tf
-from tensorflow import keras
-import seaborn as sn
-import string
 import re
 pd.set_option('mode.chained_assignment', None)
 
-#load data fxn
+# Takes in a csv and returns a list
 def load_data(filename):
     dataset = list()
     with open(filename, 'r') as file:
@@ -46,47 +37,45 @@ def load_data(filename):
             dataset.append(row)
     return dataset
 
-#load data in plain array or as a pandas dataframe
-so_csv_data = load_data("training_set.csv")
-so_df = pd.read_csv('training_set.csv', index_col = 0)
+'''=== Load Data === '''
+# Load training and testing data as CSVs
+train_csv = load_data("training_set.csv")
+test_csv = load_data("testing_set.csv")
 
-test_set = load_data("testing_set.csv")
-test_df = pd.read_csv("testing_set.csv", index_col = 0)
-# === Clean Data ====
+# Load training and testing data as Pandas Dataframes
+train_df = pd.read_csv('training_set.csv', index_col = 0)
+test_df = pd.read_csv('testing_set.csv', index_col = 0)
 
-#so_dataframe_cleaned = so_dataframe.drop(axis = 1, columns = 0)
 
-#remove NA rows
-so_df_c = so_df[so_df.id.notna()]
-test_nona = test_df[test_df.id.notna()]
-#lowercase all content
-#was previously so_df["content"] = so_df["content"].str.lower(), but that throws a warning
-#so_dataframe_cleaned.loc[:,'content'] = so_dataframe_cleaned[:,'content'].str.lower()
-#nvm
-so_df_c["content"] = so_df_c["content"].str.lower()
-test_nona["content"] = test_nona["content"].str.lower()
+''' === Clean Data / Preprocessing ==== '''
+# Remove NA rows
+train_df = train_df[train_df.id.notna()]
+test_df = test_df[test_df.id.notna()]
+test_df = test_df[test_df.content.notna()]
+# Lowercase all content
+train_df["content"] = train_df["content"].str.lower()
+test_df["content"] = test_df["content"].str.lower()
 
-#some design considerations-is bag of words or straight up tokenization more useful?
-#the first preserves ordering of words, the second doesnt
+''' Some design considerations-is bag of words or straight up tokenization more useful?
+ the first preserves ordering of words, the second doesnt '''
 
-#remove punctuation in content
-
-#optional - remove punc?
+# Remove punctuation in content
 regex = re.compile('[%s]' % re.escape('!"#%&\'()*+,-./:;<=>?@[\\]^`{|}~'))
-so_df_c["content"] = so_df_c.apply(lambda column: re.sub(regex, '', column['content']), axis = 1)
-test_nona["content"] = test_nona.apply(lambda column : str(column), axis = 1)
-test_nona["content"] = test_nona.apply(lambda column: re.sub(regex, '', column['content']), axis = 1)
+train_df["content"] = train_df.apply(lambda column: re.sub(regex, '', column['content']), axis = 1)
+test_df["content"] = test_df.apply(lambda column: re.sub(regex, '', column['content']), axis = 1)
+
 #get rid of random numbers
-so_df_c["content"] = so_df_c['content'].str.replace('\d+', '')
-test_nona["content"] = test_nona['content'].str.replace('\d+', '')
-sql_code = so_df_c["content"]
-sql_code_test = test_nona["content"]
+train_df["content"] = train_df["content"].str.replace('\d+', '')
+test_df["content"] = test_df["content"].str.replace('\d+', '')
+train_sql_code = train_df["content"]
 
-cleanedNoPunc = so_df_c
+test_sql_code = test_df["content"]
+'''
+ Old, for giving the clean data elsewhere
+cleanedNoPunc = train_df
 cleanedNoPunc.to_csv('CleanedNoPunc', index = False)
+'''
 
-cleanedNoPuncTest = test_nona
-cleanedNoPuncTest.to_csv('CleanedNoPuncTest', index = False)
 
 #query = re.sub(regex, ' ', query)
 
@@ -104,22 +93,25 @@ cleanedNoPuncTest.to_csv('CleanedNoPuncTest', index = False)
 #we use grams of 1, 2, and 3 but may need to increase
 #we used max and min df (document frequency) to get rid of stopwords (will need to be adjusted)
 #then, normalized everything so no value exceeds one (or goes below zero)
-tfidf = TfidfVectorizer(min_df = 7, max_df = .8, ngram_range = (1,3), stop_words = "english")
-tfidf2 = TfidfVectorizer(min_df = 7, max_df = .8, ngram_range = (1,3), stop_words = "english")
+tfidf = TfidfVectorizer(min_df = 8, max_df = .8, ngram_range = (1,3), stop_words = "english")
 
-features = tfidf.fit_transform(sql_code)
-labels = cleanedNoPunc.sql_injectable
-vectorized = pd.DataFrame(
-        features.todense(),
+Y_train = train_df.sql_injectable
+X_train = tfidf.fit_transform(train_sql_code)
+
+X_test = tfidf.fit_transform(test_sql_code)
+Y_test = train_df.sql_injectable
+
+
+train_vectorized = pd.DataFrame(
+        X_train.todense(),
         columns = tfidf.get_feature_names()
         )
-features_test = tfidf2.fit_transform(sql_code_test)
-labels_test = cleanedNoPuncTest.sql_injectable
 
-vectorized_test = pd.DataFrame(
-        features_test.todense(),
-        columns = tfidf2.get_feature_names()
+test_vectorized = pd.DataFrame(
+        X_test.todense(),
+        columns = tfidf.get_feature_names()
         )
+
 #compare Linear SVC and Logistic Regression
 
 models = [LinearSVC(), LogisticRegression(random_state=3)]
@@ -129,52 +121,34 @@ cv_df = pd.DataFrame(index=range(CV * len(models)))
 entries = []
 for model in models:
     model_name = model.__class__.__name__
-    accuracies = cross_val_score(model, vectorized, labels, scoring = 'accuracy', cv=CV)
+    accuracies = cross_val_score(model, train_vectorized, Y_train, scoring = 'accuracy', cv=CV)
     for fold_idx, accuracy in enumerate(accuracies):
         entries.append((model_name, fold_idx, accuracy))
-
-
+        
 cv_df = pd.DataFrame(entries, columns = ['model_name', 'fold_idx', 'accuracy'])
 
 print("Linear SVC ", cv_df[['accuracy']].iloc[[0,1,2,3,4,5,6,7]].mean(axis=0))
 print("Logistic Regression ", cv_df[['accuracy']].iloc[[8,9,10,11,12,13,14,15]].mean(axis=0))
-forest_reg = RandomForestRegressor()
-forest_reg.fit(vectorized, labels)
-forest_reg_scores = cross_val_score(forest_reg, vectorized, labels, scoring = "neg_mean_squared_error", cv = 8)
-forest_reg_rmse_scores = np.sqrt(- forest_reg_scores)
 
 linearSVC = LinearSVC()
-linearSVC = linearSVC.fit(vectorized, labels)
+linearSVC = linearSVC.fit(train_vectorized, Y_train)
 
-linearSVC_scores = cross_val_score(linearSVC, vectorized, labels, scoring = "neg_mean_squared_error", cv = 8)
-linearSVC_rmse_scores = np.sqrt(-linearSVC_scores)
-logReg = LogisticRegression(random_state = 3)
-logReg = logReg.fit(vectorized, labels)
-train_predictions = linearSVC.predict(vectorized)
-lin_mse = mean_squared_error(labels, train_predictions)
-lin_rmse = np.sqrt(lin_mse)
-tree_reg = DecisionTreeRegressor()
-tree_reg.fit(vectorized, labels)
+y_train_pred = cross_val_predict(linearSVC, train_vectorized, Y_train, cv=3)
 
-tree_pred = tree_reg.predict(vectorized)
-tree_mse = mean_squared_error(labels, train_predictions)
-tree_rmse = np.sqrt(tree_mse)
+print(confusion_matrix(Y_train, y_train_pred))
+# Plot non-normalized confusion matrix
+"""
+confusionMatrix = plot_confusion_matrix(linearSVC, X_test, y_test,
+                                 display_labels=class_names,
+                                 cmap=plt.cm.Blues,
+                                 normalize=normalize)
+disp.ax_.set_title("Confusion matrix, without normalization")
+"""
+#print(title)
+#print(disp.confusion_matrix)
 
-y_train_pred = cross_val_predict(linearSVC, vectorized, labels, cv=3)
-y_train_test = cross_val_predict(linearSVC, vectorized_test, labels_test.T, cv=3)
 
-y_train_pred_log_reg = cross_val_predict(logReg, vectorized, labels, cv=3)
-y_train_test_log_reg = cross_val_predict(logReg, vectorized_test, labels_test.T, cv=3)
-
-print(confusion_matrix(labels, y_train_pred))
-print(confusion_matrix(labels_test, y_train_test))
-print(confusion_matrix(labels_test, y_train_test_log_reg))
-
-cm_df = pd.DataFrame(confusion_matrix(labels_test, y_train_test))
-sn.set(font_scale=1) # for label size
-sn.heatmap(cm_df, annot=True, annot_kws={"size": 16}, fmt="d") # font size
 plt.show()
-
 #print(poopie.predict(so_df_c['content'][5]))
 
 
