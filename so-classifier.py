@@ -10,15 +10,26 @@ import nltk
 import matplotlib.pyplot as plt
 import numpy as np
 from csv import reader
+import seaborn as sns
+from numpy import linalg
+import matplotlib.patheffects as PathEffects
+from numpy.linalg import norm
+from scipy.spatial.distance import squareform, pdist
+from sklearn.manifold import TSNE
+from sklearn.datasets import load_digits
+from sklearn.preprocessing import scale
 from nltk.corpus import treebank
 from nltk.tokenize import word_tokenize, sent_tokenize
 import pandas as pd
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.tree import DecisionTreeClassifier
 from scipy import stats
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import cross_val_predict
@@ -29,10 +40,20 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import LinearSVC
 import tensorflow as tf
+from sklearn.metrics import recall_score
+from sklearn.metrics import precision_score
 from tensorflow import keras
 import seaborn as sn
 import string
 import re
+
+from sklearn.cluster import KMeans
+
+sns.set_style('darkgrid')
+sns.set_palette('muted')
+sns.set_context("notebook", font_scale=1.5,
+                rc={"lines.linewidth": 2.5})
+
 pd.set_option('mode.chained_assignment', None)
 
 #load data fxn
@@ -45,6 +66,33 @@ def load_data(filename):
                 continue
             dataset.append(row)
     return dataset
+
+def scatter(x, colors):
+    # We choose a color palette with seaborn.
+    palette = np.array(sns.color_palette("hls", 18))
+
+    # We create a scatter plot.
+    f = plt.figure(figsize=(32, 32))
+    ax = plt.subplot(aspect='equal')
+    sc = ax.scatter(x[:,0], x[:,1], lw=0, s=120,
+                    c=palette[colors.astype(np.int)])
+    #plt.xlim(-25, 25)
+    #plt.ylim(-25, 25)
+    ax.axis('off')
+    ax.axis('tight')
+
+    # We add the labels for each cluster.
+    txts = []
+    for i in range(18):
+        # Position of each label.
+        xtext, ytext = np.median(x[colors == i, :], axis=0)
+        txt = ax.text(xtext, ytext, str(i), fontsize=50)
+        txt.set_path_effects([
+            PathEffects.Stroke(linewidth=5, foreground="w"),
+            PathEffects.Normal()])
+        txts.append(txt)
+
+    return f, ax, sc, txts
 
 #load data in plain array or as a pandas dataframe
 so_csv_data = load_data("training_set.csv")
@@ -119,15 +167,15 @@ all_code = all_data["content"]
 X_train_test = tfidf.fit_transform(all_code)
 X_train_test_df = pd.DataFrame(X_train_test.toarray())
 X_train_test = X_train_test_df
+X_train = X_train_test[0:495]
+y_train = cleanedNoPunc.sql_injectable
+y_train_df = y_train.to_frame()
 """
 
 X_train = tfidf.fit_transform(sql_code_train)
 X_train_df = pd.DataFrame(X_train.toarray())
 X_train = X_train_df
 """
-X_train = X_train_test[0:495]
-y_train = cleanedNoPunc.sql_injectable
-y_train_df = y_train.to_frame()
 
 #y_train = y_train_df.to_numpy
 """
@@ -151,10 +199,10 @@ test_df = pd.DataFrame(
         y_test_df,
         columns = tfidf.get_feature_names()
         )
-"""
-#compare Linear SVC and Logistic Regression
 
-models = [LinearSVC(), LogisticRegression(random_state=3)]
+#compare Linear SVC and Logistic Regression
+"""
+models = [LinearSVC(C=4), LogisticRegression(random_state=3)]
 #cross validation
 CV= 8
 cv_df = pd.DataFrame(index=range(CV * len(models)))
@@ -174,9 +222,41 @@ print("Logistic Regression ", cv_df[['accuracy']].iloc[[8,9,10,11,12,13,14,15]].
 linearSVC = LinearSVC()
 linearSVC = linearSVC.fit(X_train, y_train)
 linearSVC_scores = cross_val_score(linearSVC, X_train, y_train, scoring = "neg_mean_squared_error", cv = 8)
+linearSVC_scores_test = cross_val_score(linearSVC, X_test, y_test, scoring = "accuracy", cv = 8)
+print("Linear SVC TEST:", linearSVC_scores_test.mean())
 linearSVC_rmse_scores = np.sqrt(-linearSVC_scores)
 
+logClass = LogisticRegression(random_state=3)
+logClass = logClass.fit(X_train, y_train)
+logClass_scores_test = cross_val_score(logClass, X_train, y_train, scoring = "accuracy", cv = 8)
+logClass_predictions = logClass.predict(X_test)
+cm_df = pd.DataFrame(confusion_matrix(y_test, logClass_predictions))
+sn.set(font_scale=1) # for label size
+ax = plt.axes()
+sn.heatmap(cm_df, annot=True, annot_kws={"size": 16}, fmt="d", ax = ax) # font size
+ax.set_title('Logistic Regression Confusion Matrix', fontsize = 16)
+plt.ylabel("Actual", fontsize = 16)
+plt.xlabel("Predicted", fontsize = 16)
+plt.show()
+
+logClass_test = cross_val_score(logClass, X_test, y_test, scoring = "accuracy", cv = 8)
+print(logClass_test.mean())
+"""
+# This is way too slow to train on my computer ATM
+polynomial_svm_clf = Pipeline([
+        ("poly_features", PolynomialFeatures(degree=3)),
+        ("scaler", StandardScaler()),
+        ("svm_clf", LinearSVC(C=1, loss="hinge"))])
+poly_svm = polynomial_svm_clf.fit(X_train, y_train)
+polySVC_scores = cross_val_score(poly_svm, X_train, y_train, scoring = "neg_mean_squared_error", cv = 8)
+print("PolySVM: ", polySVC_scores)
+"""
+"""
+
+# LinearSVM Confusion Matrix  
 linearSVC_predictions = linearSVC.predict(X_test)
+linearSVC_recall = recall_score(y_test, linearSVC_predictions)
+linearSVC_precision = precision_score(y_test, linearSVC_predictions)
 print(confusion_matrix(y_test, linearSVC_predictions))
 cm_df = pd.DataFrame(confusion_matrix(y_test, linearSVC_predictions))
 sn.set(font_scale=1) # for label size
@@ -187,20 +267,56 @@ plt.ylabel("Actual", fontsize = 16)
 plt.xlabel("Predicted", fontsize = 16)
 plt.show()
 
-"""
-# Evaluate Random Forest
-forest_reg = RandomForestRegressor()
-forest_reg.fit(X_train, y_train)
-forest_reg_scores = cross_val_score(forest_reg, X_train, y_train, scoring = "neg_mean_squared_error", cv = 8)
-forest_reg_rmse_scores = np.sqrt(- forest_reg_scores)
-
 # Evaluate Decision Tree
-tree_reg = DecisionTreeRegressor()
+plt.figure()
+tree_reg = DecisionTreeClassifier()
 tree_reg.fit(X_train, y_train)
 tree_pred = tree_reg.predict(X_test)
 tree_mse = mean_squared_error(y_test, tree_pred)
 tree_rmse = np.sqrt(tree_mse)
+decision_tree_scores = cross_val_score(tree_reg, X_train, y_train, scoring = "accuracy", cv = 8)
+print("Decision trees training cross val score:", decision_tree_scores.mean())
 
+decision_tree_predictions =  tree_reg.predict(X_test)
+decision_tree_test_scores = cross_val_score(tree_reg, X_test, y_test, scoring = "accuracy", cv = 8)
+print("Decision trees test cross val score:", decision_tree_test_scores.mean())
+cm_df = pd.DataFrame(confusion_matrix(y_test, decision_tree_predictions))
+sn.set(font_scale=1) # for label size
+ax = plt.axes()
+sn.heatmap(cm_df, annot=True, annot_kws={"size": 16}, fmt="d", ax = ax) # font size
+ax.set_title('Decision Tree Confusion Matrix', fontsize = 16)
+plt.ylabel("Actual", fontsize = 16)
+plt.xlabel("Predicted", fontsize = 16)
+plt.show()
+
+# Evaluate Random Forest
+forest_reg = RandomForestClassifier()
+forest_reg.fit(X_train, y_train)
+forest_reg_scores = cross_val_score(forest_reg, X_train, y_train, scoring = "neg_mean_squared_error", cv = 8)
+forest_reg_rmse_scores = np.sqrt(- forest_reg_scores)
+forest_scores = cross_val_score(forest_reg, X_train, y_train, scoring = "accuracy", cv = 8)
+print(forest_scores.mean())
+forest_scores_test = cross_val_score(forest_reg, X_test, y_test, scoring = "accuracy", cv = 8)
+print("forest test", forest_scores_test.mean())
+
+model = MultinomialNB().fit(X_train, y_train)
+# Evaluate the model
+predicted = model.predict(X_test)
+print(np.mean(predicted == y_test))
+"""
+'''
+# Check error balance
+print(confusion_matrix(y_test, predicted))
+cm_df = pd.DataFrame(confusion_matrix(y_test, predicted))
+sn.set(font_scale=1) # for label size
+ax = plt.axes()
+sn.heatmap(cm_df, annot=True, annot_kws={"size": 16}, fmt="d", ax = ax) # font size
+ax.set_title('Naive Bayes Confusion Matrix', fontsize = 16)
+plt.ylabel("Actual", fontsize = 16)
+plt.xlabel("Predicted", fontsize = 16)
+plt.show()
+'''
+"""
 # Evaluate LinearSVC
 linearSVC = LinearSVC()
 linearSVC = linearSVC.fit(X_train, y_train)
